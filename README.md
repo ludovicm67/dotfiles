@@ -75,6 +75,13 @@ source .config/base16-gnome-terminal/base16-ocean.dark.sh
 
 Il ne vous restera plus qu'à lancer un nouveau terminal (`CTRL + ALT + T`) pour voir le résultat !
 
+### Vim
+
+Vim est un éditeur de texte très puissant qui s'tilise directement depuis votre terminal.
+
+J'utilise un gestionnaire de paquets, *NeoBundle*, installable avec la commande suivante : `curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install.sh && sh ./install.sh`
+
+Il suffit de placer mon fichier `.vimrc` dans votre répertoire utilisateur et le tour est joué !
 
 ## Ce qui reste à installer
 
