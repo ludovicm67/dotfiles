@@ -46,4 +46,6 @@ let g:airline_theme='bubblegum'
 map <C-n> :NERDTreeToggle<CR>
 nnoremap <C-Down> ddp
 nnoremap <C-Up> <Up>ddp<Up>
+vnoremap <C-Down> :m '>+1<CR>gv=gv
+vnoremap <C-Up> :m '<-2<CR>gv=gv
 
