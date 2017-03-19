@@ -2,6 +2,7 @@
 
 Retrouvez ici tous mes fichiers de configuration linux. J'utilise la distribution Ubuntu dans sa dernière version, mais nombreux points ici fontionnent sans soucis sur d'autres distributions.
 
+
 ## Installation des ressources de base
 
 En général, une fois que j'arrive sur un Ubuntu tout frais, j'aime bien lancer une petite commande du style : `sudo apt install git curl unity-tweak-tool pavucontrol zsh`
@@ -11,6 +12,7 @@ En général, une fois que j'arrive sur un Ubuntu tout frais, j'aime bien lancer
  - `unity-tweak-tool` : pour configurer l'apparence d'Unity plus simplement
  - `pavucontrol` : si vous utilisez des périphériques audio pas très bien reconnus par Ubuntu (casques USB, sortie audio en HDMI, ...), cela vous sauvera la vie pour la partie configuration de tous les périphériques audio (désactiver la sortie jack, etc...).
  - `zsh` : alternative de shell pour remplacer bash qui est par défaut
+
 
 ## Apparence
 
@@ -42,6 +44,7 @@ Pour changer les icônes et le thème, lancez `unity-tweak-tool`, puis dans la r
 
 Allez ensuite dans la partie concernant les icônes. Pour ma part j'utilise `Numix-circle`, du fait qu'elles soient très complètes, et très jolies.
 
+
 ## Terminal
 
 ### Police par défaut : vive le Powerline !
@@ -70,6 +73,14 @@ source .config/base16-gnome-terminal/base16-ocean.dark.sh
 ```
 
 Il ne vous restera plus qu'à lancer un nouveau terminal (`CTRL + ALT + T`) pour voir le résultat !
+
+Ensuite, pour éviter des soucis de couleurs (notamment dans vim), j'éxécute les commandes suivantes :
+
+```
+git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+base16_ocean
+```
+
 
 ### Vim (neovim)
 
