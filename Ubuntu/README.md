@@ -2,7 +2,6 @@
 
 Retrouvez ici tous mes fichiers de configuration linux. J'utilise la distribution Ubuntu dans sa dernière version, mais nombreux points ici fontionnent sans soucis sur d'autres distributions.
 
-
 ## Installation des ressources de base
 
 En général, une fois que j'arrive sur un Ubuntu tout frais, j'aime bien lancer une petite commande du style : `sudo apt install git curl unity-tweak-tool pavucontrol zsh`
@@ -12,7 +11,6 @@ En général, une fois que j'arrive sur un Ubuntu tout frais, j'aime bien lancer
  - `unity-tweak-tool` : pour configurer l'apparence d'Unity plus simplement
  - `pavucontrol` : si vous utilisez des périphériques audio pas très bien reconnus par Ubuntu (casques USB, sortie audio en HDMI, ...), cela vous sauvera la vie pour la partie configuration de tous les périphériques audio (désactiver la sortie jack, etc...).
  - `zsh` : alternative de shell pour remplacer bash qui est par défaut
-
 
 ## Apparence
 
@@ -43,7 +41,6 @@ sudo apt-get install arc-theme
 Pour changer les icônes et le thème, lancez `unity-tweak-tool`, puis dans la rubrique `Apparence` cliquez sur `Thème`. Pour ma part j'utilise `Arc-darker`.
 
 Allez ensuite dans la partie concernant les icônes. Pour ma part j'utilise `Numix-circle`, du fait qu'elles soient très complètes, et très jolies.
-
 
 ## Terminal
 
@@ -83,7 +80,6 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
 ```
-
 
 J'utilise un gestionnaire de paquets, *vim-plug*, installable avec la commande suivante : `curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`

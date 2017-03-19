@@ -4,7 +4,6 @@ Certaines fonctionnalités ne me plaisent pas spécialement ou ne sont pas
 activées par défaut. Je mets ici à disposition l'ensemble de mes scripts
 pour changer le registre.
 
-
 ## `win-num-lock-startup.reg`
 
 Ce fichier modifie les registres Windows et permet d'activer automatiquement
