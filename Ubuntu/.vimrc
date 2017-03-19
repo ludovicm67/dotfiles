@@ -1,77 +1,49 @@
-syntax on "coloration syntaxique
-set hidden
-set wildmenu
-set showcmd
-set backspace=indent,eol,start
+syntax on "syntax highlighting
 set autoindent
-set nostartofline
-set ruler
+set backspace=indent,eol,start
+set expandtab
+set hidden
 set laststatus=2
 set mouse=a
+set nostartofline
 set number
+set ruler
 set shiftwidth=4
+set showcmd
 set softtabstop=4
-set expandtab
-set t_Co=256
-set background=dark
+set wildmenu
 
-"NeoBundle Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
+" vim-plug
+call plug#begin()
+Plug 'scrooloose/NerdTree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'chriskempson/base16-vim'
+call plug#end()
+
+" Theme
+set background=dark
+set t_Co=256
+let base16colorspace=256
+colorscheme base16-default-dark
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
 endif
 
-" Required:
-set runtimepath+=/home/ludovic/.vim/bundle/neobundle.vim/
-
-" Required:
-call neobundle#begin(expand('/home/ludovic/.vim/bundle'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Add or remove your Bundles here:
-NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
-
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'vim-airline/vim-airline'
-NeoBundle 'vim-airline/vim-airline-themes'
-
-NeoBundle 'Shougo/vimproc.vim', {
-\ 'build' : {
-\     'windows' : 'tools\\update-dll-mingw',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make',
-\     'linux' : 'make',
-\     'unix' : 'gmake',
-\    },
-\ }
-
-" You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-" Required:
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-"End NeoBundle Scripts-------------------------
-
-
+" NERDTree configuration
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Airline configuration
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
 
+" Bindings
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-Down> ddp
+nnoremap <C-Up> <Up>ddp<Up>
+
