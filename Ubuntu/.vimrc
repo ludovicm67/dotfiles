@@ -4,6 +4,8 @@ set backspace=indent,eol,start
 set expandtab
 set hidden
 set laststatus=2
+set list
+set listchars=nbsp:•
 set mouse=a
 set nostartofline
 set number

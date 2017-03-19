@@ -3,7 +3,7 @@
 Retrouvez ici tous mes fichiers de configuration linux. J'utilise la distribution Ubuntu dans sa dernière version, mais nombreux points ici fontionnent sans soucis sur d'autres distributions.
 
 
-## Installation des ressources de base
+## Installation des ressources de base
 
 En général, une fois que j'arrive sur un Ubuntu tout frais, j'aime bien lancer une petite commande du style : `sudo apt install git curl unity-tweak-tool pavucontrol zsh`
 
@@ -45,7 +45,7 @@ Pour changer les icônes et le thème, lancez `unity-tweak-tool`, puis dans la r
 Allez ensuite dans la partie concernant les icônes. Pour ma part j'utilise `Numix-circle`, du fait qu'elles soient très complètes, et très jolies.
 
 
-## Terminal
+## Terminal
 
 ### Police par défaut : vive le Powerline !
 
@@ -54,7 +54,7 @@ Rendez-vous ici : https://github.com/ludovicm67/fonts pour installer une font en
 
 Une fois la police installée, ouvrez un terminal (`CTRL + ALT + T`), puis dans `Terminal > Préférences > Profils > Modifier` , il sera possible de changer la police par défaut; choisissez donc celle que vous avez choisie précédemment.
 
-### Shell par défaut : zsh !
+### Shell par défaut : zsh !
 
 Si zsh n'est pas le shell par défaut, il vous suffira de lancer la commande : `chsh -s $(which zsh)` pour le faire.
 
