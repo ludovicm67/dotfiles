@@ -37,6 +37,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'honza/vim-snippets'
 Plug 'kien/ctrlp.vim'
 Plug 'posva/vim-vue'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 " Theme
