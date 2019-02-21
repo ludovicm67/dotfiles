@@ -16,43 +16,23 @@ En général, une fois que j'arrive sur un Ubuntu tout frais, j'aime bien lancer
 
 ## Apparence
 
-Attaquons-nous désormais à la partie concernant l'apparence (thèmes, icônes, ...) !
-
-### Numix
-
-Pour installer le thème et les icônes Numix, il vous suffira de lancer les commandes suivantes :
-
-```
-sudo add-apt-repository ppa:numix/ppa
-sudo apt-get update
-sudo apt-get install numix-gtk-theme numix-icon-theme-circle
-```
-
-### Arc-theme
-
-De même pour arc-theme :
-
-```
-sudo add-apt-repository ppa:noobslab/themes
-sudo apt-get update
-sudo apt-get install arc-theme
-```
-
-### Choisir le thème et les icônes
-
-Pour changer les icônes et le thème, lancez `unity-tweak-tool`, puis dans la rubrique `Apparence` cliquez sur `Thème`. Pour ma part j'utilise `Arc-darker`.
-
-Allez ensuite dans la partie concernant les icônes. Pour ma part j'utilise `Numix-circle`, du fait qu'elles soient très complètes, et très jolies.
+J'utilise le thème et les icônes de base d'Ubuntu, du fait qu'ils sont
+plutôt dans l'air du temps.
 
 
 ## Terminal
 
-### Police par défaut : vive le Powerline !
+### Installation des polices Powerline
 
-Pour afficher certains caractères spéciaux, il va falloir utiliser une font spéciale.  
-Rendez-vous ici : https://github.com/ludovicm67/fonts pour installer une font en particulier; personnellement j'utilise `Source Code Pro for Powerline Light`.
+Le thème que j'utilise pour mon shell a besoin d'une font powerline.
 
-Une fois la police installée, ouvrez un terminal (`CTRL + ALT + T`), puis dans `Terminal > Préférences > Profils > Modifier` , il sera possible de changer la police par défaut; choisissez donc celle que vous avez choisie précédemment.
+Pour les installer, il suffit de lancer la commande suivante :
+
+```sh
+sudo apt-get install fonts-powerline
+```
+
+Plus d'informations sur https://github.com/powerline/fonts#quick-installation .
 
 ### Shell par défaut : zsh !
 
@@ -84,11 +64,11 @@ base16_ocean
 
 ### Vim (neovim)
 
-Neovim est un éditeur de texte très puissant qui s'tilise directement depuis votre terminal. Pour l'installer sur Ubuntu, il faut lancer les commandes suivantes :
+Neovim est un éditeur de texte très puissant qui s'tilise directement depuis
+votre terminal. Pour l'installer sur Ubuntu, il faut lancer la commande
+suivante :
 
-```
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt-get update
+```sh
 sudo apt-get install neovim
 ```
 
@@ -96,16 +76,6 @@ J'utilise un gestionnaire de paquets, *vim-plug*, installable avec la commande s
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
 Il suffit de placer mon fichier `.vimrc` dans votre répertoire utilisateur, de lancer `:PlugInstall` depuis vim pour installer les plugins, et le tour est joué !
-
-## Ce qui reste à installer
-
- - Google Chrome (car la console développeur `F12` est quand-même bien plus classe que sur Firefox)
- - Sublime Text (un éditeur de texte qui permet d'être relativement efficace; au passage faire un tour ici : https://github.com/ludovicm67/ST3Prefs pour la conf)
- - Discord, c'est bien de parler avec plein de gens !
- - Skype, pratique pour les appels vidéos
- - FileZilla, quand on travaille encore avec ftp..
- - Steam, car jouer c'est bien !
- - Environnement de développement : nodejs + php + mysql + apache / nginx + ...
 
 Voili voilou; ce sera déjà pas mal :wink:
 
